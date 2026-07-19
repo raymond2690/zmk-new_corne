@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - SYMBOL
+  - Number
+  - {t: '$$mdi:keyboard-space$$', h: Mouse}
+  - {t: '$$mdi:keyboard-return$$', h: Mouse}
+  - Navigation
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  Number:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -98,7 +98,7 @@ layers:
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  Navigation:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  Mouse:
   - '&studio_unlock'
   - F1
   - F2
@@ -299,19 +299,19 @@ combos:
   k: '&soft_off'
 - p: [25, 26]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
 - p: [26, 27]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
 - p: [36, 37]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
 - p: [37, 38]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
 - p: [38, 39]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
 - p: [39, 40]
   k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [QWERTY, NUMBER, SYMBOL, Fn]
+  l: [QWERTY, Number, Navigation, Mouse]
