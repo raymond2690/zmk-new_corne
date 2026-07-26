@@ -34,6 +34,26 @@
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
+
+        HR_Shift: HR_Shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            flavor = "tap-preferred";
+        };
+
+        HR_other: HR_other {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_OTHER";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -87,10 +107,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R  &kp T                                 &kp C_AC_ZOOM_IN               &kp Y        &kp U         &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp K_PREV  &kp K_PLAY_PAUSE   &kp K_NEXT  &kp H        &kp J         &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE                &kp C_AC_ZOOM_OUT              &kp N        &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 2  &lt 1 SPACE                                                          &lt 3 ENTER  &lt 2 K_MENU  &lt 3 TAB
+&kp ESC    &kp Q                 &kp W                 &kp E              &kp R                   &kp T                                 &kp C_AC_ZOOM_IN               &kp Y        &kp U                   &kp I              &kp O                  &kp P                          &kp MINUS
+&td0       &HR_other LEFT_GUI A  &HR_other LEFT_ALT S  &HR_other LCTRL D  &HR_Shift LEFT_SHIFT F  &kp G                     &kp K_PREV  &kp K_PLAY_PAUSE   &kp K_NEXT  &kp H        &HR_Shift LS(RSHIFT) J  &HR_other RCTRL K  &HR_other RIGHT_ALT L  &HR_other RIGHT_GUI SEMICOLON  &kp SQT
+&kp LCTRL  &kp Z                 &kp X                 &kp C              &kp V                   &kp B        &kp SPACE                &kp C_AC_ZOOM_OUT              &kp N        &kp M                   &kp COMMA          &kp DOT                &kp FSLH                       &kp EQUAL
+                                                       &kp LGUI           &mo 2                   &lt 1 SPACE                                                          &lt 3 ENTER  &lt 2 TAB               &lt 3 LS(K_MENU)
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
