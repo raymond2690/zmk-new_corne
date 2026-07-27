@@ -65,37 +65,37 @@
         };
 
         Backspace {
-            bindings = <&none>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <25 26>;
             layers = <0 7 7>;
         };
 
         Delete {
-            bindings = <&none>;
+            bindings = <&kp DELETE>;
             key-positions = <26 27>;
             layers = <0 7 7>;
         };
 
         Op_Parentheses {
-            bindings = <&none>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <36 37>;
             layers = <0 7 7>;
         };
 
         Cl_Parentheses {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <37 38>;
             layers = <0 7 7>;
         };
 
         Op_Sq_Brackets {
-            bindings = <&none>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <38 39>;
             layers = <0 7 7>;
         };
 
         Cl_Sq_Brackets {
-            bindings = <&none>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <39 40>;
             layers = <0 7 7>;
         };
