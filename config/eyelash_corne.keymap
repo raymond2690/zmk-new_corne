@@ -67,37 +67,37 @@
         Backspace {
             bindings = <&none>;
             key-positions = <25 26>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
 
         Delete {
             bindings = <&none>;
             key-positions = <26 27>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
 
         Op_Parentheses {
             bindings = <&none>;
             key-positions = <36 37>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
 
         Cl_Parentheses {
             bindings = <&none>;
             key-positions = <37 38>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
 
         Op_Sq_Brackets {
             bindings = <&none>;
             key-positions = <38 39>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
 
         Cl_Sq_Brackets {
             bindings = <&none>;
             key-positions = <39 40>;
-            layers = <0 6 3>;
+            layers = <0 7 7>;
         };
     };
 
@@ -107,10 +107,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC    &kp Q                 &kp W                 &kp E              &kp R                   &kp T                                 &kp C_AC_ZOOM_IN               &kp Y        &kp U                   &kp I              &kp O                  &kp P                          &kp MINUS
-&td0       &HR_other LEFT_GUI A  &HR_other LEFT_ALT S  &HR_other LCTRL D  &HR_Shift LEFT_SHIFT F  &kp G                     &kp K_PREV  &kp K_PLAY_PAUSE   &kp K_NEXT  &kp H        &HR_Shift LS(RSHIFT) J  &HR_other RCTRL K  &HR_other RIGHT_ALT L  &HR_other RIGHT_GUI SEMICOLON  &kp SQT
-&kp LCTRL  &kp Z                 &kp X                 &kp C              &kp V                   &kp B        &kp SPACE                &kp C_AC_ZOOM_OUT              &kp N        &kp M                   &kp COMMA          &kp DOT                &kp FSLH                       &kp EQUAL
-                                                       &kp LGUI           &mo 6                   &lt 1 SPACE                                                          &lt 3 ENTER  &lt 6 TAB               &lt 3 LS(K_MENU)
+&kp ESC    &kp Q                 &kp W                 &kp E              &kp R                   &kp T                                 &kp C_AC_ZOOM_IN               &kp Y        &kp U                    &kp I              &kp O                  &kp P                          &kp MINUS
+&td0       &HR_other LEFT_GUI A  &HR_other LEFT_ALT S  &HR_other LCTRL D  &HR_Shift LEFT_SHIFT F  &kp G                     &kp K_PREV  &kp K_PLAY_PAUSE   &kp K_NEXT  &kp H        &HR_Shift RIGHT_SHIFT J  &HR_other RCTRL K  &HR_other RIGHT_ALT L  &HR_other RIGHT_GUI SEMICOLON  &kp SQT
+&kp LCTRL  &kp Z                 &kp X                 &kp C              &kp V                   &kp B        &kp SPACE                &kp C_AC_ZOOM_OUT              &kp N        &kp M                    &kp COMMA          &kp DOT                &kp FSLH                       &kp EQUAL
+                                                       &kp LEFT_ALT       &lt 1 BACKSPACE         &lt 1 SPACE                                                          &lt 7 ENTER  &lt 7 TAB                &lt 7 LS(K_MENU)
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -118,8 +118,8 @@
 
         Number {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                     &trans          &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp PLUS
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                     &trans          &kp F11       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH     &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &kp F12       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp PLUS
 &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans            &trans          &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
                         &trans  &trans  &trans                                     &kp NUMBER_0  &trans        &kp PERIOD
             >;
@@ -134,27 +134,22 @@
             >;
         };
 
-        layer_3 {
-            display-name = "Mouse";
+        Mouse {
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&trans  &trans  &mkp RCLK  &trans  &mkp LCLK  &trans                    &trans          &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans            &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans  &trans            &trans          &trans  &msc SCRL_UP    &trans          &msc SCRL_DOWN   &trans  &trans
+                           &trans  &trans     &trans                                    &trans  &trans          &trans
             >;
-
-            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        layer_4 {
+        Symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp GRAVE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                    &trans          &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
+&trans     &trans      &trans      &trans      &trans      &trans                &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans
+&trans     &trans      &trans      &trans      &trans      &trans      &trans            &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                                   &trans      &trans      &trans                                        &trans      &trans      &trans
             >;
-
-            label = "Symbols";
         };
 
         layer_5 {
@@ -173,6 +168,18 @@
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+            >;
+
+            sensor-bindings = <&rsr_vol &rsr_trans>;
+        };
+
+        layer_3 {
+            display-name = "Mouse";
+            bindings = <
+&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
