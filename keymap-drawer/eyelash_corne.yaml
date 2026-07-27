@@ -298,20 +298,20 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [25, 26]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [QWERTY, Mouse, Mouse]
 - p: [26, 27]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: $$mdi:backspace-reverse-outline$$
   l: [QWERTY, Mouse, Mouse]
 - p: [36, 37]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: (
   l: [QWERTY, Mouse, Mouse]
 - p: [37, 38]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: )
   l: [QWERTY, Mouse, Mouse]
 - p: [38, 39]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: {t: '[', s: '{'}
   l: [QWERTY, Mouse, Mouse]
 - p: [39, 40]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: {t: ']', s: '}'}
   l: [QWERTY, Mouse, Mouse]
