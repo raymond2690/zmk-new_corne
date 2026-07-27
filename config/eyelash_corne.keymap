@@ -67,37 +67,37 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <25 26>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <26 27>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
 
         Op_Parentheses {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <36 37>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
 
         Cl_Parentheses {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <37 38>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
 
         Op_Sq_Brackets {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <38 39>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
 
         Cl_Sq_Brackets {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <39 40>;
-            layers = <0 7 7>;
+            layers = <0>;
         };
     };
 
@@ -145,10 +145,10 @@
 
         Symbols {
             bindings = <
-&kp GRAVE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                    &trans          &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)     &trans
-&trans     &trans      &trans      &trans      &trans      &trans                &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans         &trans
-&trans     &trans      &trans      &trans      &trans      &trans      &trans            &trans          &trans      &trans      &trans      &trans      &kp BACKSLASH  &trans
-                                   &trans      &trans      &trans                                        &trans      &trans      &trans
+&kp GRAVE  &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                    &trans          &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)     &trans
+&trans     &trans        &trans        &trans        &trans      &trans                &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans         &trans
+&trans     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans      &trans      &trans            &trans          &trans      &trans      &trans      &trans      &kp BACKSLASH  &trans
+                                       &trans        &trans      &trans                                        &trans      &trans      &trans
             >;
         };
 
@@ -168,18 +168,6 @@
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
-            >;
-
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-        };
-
-        layer_3 {
-            display-name = "Mouse";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
