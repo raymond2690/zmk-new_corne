@@ -315,3 +315,7 @@ combos:
 - p: [39, 40]
   k: {t: ']', s: '}'}
   l: [QWERTY]
+- p: [14, 26]
+  k: $$mdi:alpha-w-box$$
+- p: [17, 23]
+  k: $$mdi:apple-keyboard-caps$$
